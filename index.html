@@ -1,0 +1,986 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AKARAWATOU Fawaz - Portfolio Développeur Web & Mobile</title>
+    <!-- Meta tags SEO -->
+    <meta
+      name="description"
+      content="Portfolio de AKARAWATOU Fawaz, Développeur Web & Mobile spécialisé en Laravel, React et Flutter. Découvrez mes projets et compétences."
+    />
+    <meta
+      name="keywords"
+      content="Développeur Web, Développeur Mobile, Laravel, React, Flutter, Portfolio"
+    />
+    <meta name="author" content="AKARAWATOU Fawaz" />
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/logo_fawaz.png" />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/animations.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+  </head>
+  <body>
+    <!-- Loader -->
+    <div class="loader" id="loader">
+      <div class="loader-spinner"></div>
+    </div>
+
+    <!-- Curseur personnalisé -->
+    <div class="cursor cursor-1"></div>
+    <div class="cursor cursor-2"></div>
+
+    <!-- Navbar sticky -->
+    <nav class="navbar" id="navbar">
+      <div class="nav-container">
+        <a href="#" class="nav-logo">FAWAZDev</a>
+        <ul class="nav-menu">
+          <li><a href="#hero" class="nav-link active">Accueil</a></li>
+          <li><a href="#about" class="nav-link">À propos</a></li>
+          <li><a href="#skills" class="nav-link">Compétences</a></li>
+          <li><a href="#services" class="nav-link">Services</a></li>
+          <li><a href="#projects" class="nav-link">Projets</a></li>
+          <li><a href="#experience" class="nav-link">Expérience</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <div class="nav-actions">
+          <button class="theme-toggle" id="theme-toggle">
+            <i class="fas fa-moon"></i>
+          </button>
+          <button class="menu-toggle" id="menu-toggle">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section id="hero" class="hero">
+      <div class="hero-content fade-in">
+        <div class="hero-image">
+          <img
+            src="images/logo_fawaz.png"
+            alt="AKARAWATOU Fawaz"
+            onerror="
+              this.src =
+                'https://via.placeholder.com/300x300/0f172a/3b82f6?text=FAWAZ'
+            "
+          />
+        </div>
+        <h1 class="hero-title">
+          Bonjour, je suis <span class="highlight">AKARAWATOU Fawaz</span>
+        </h1>
+        <div class="hero-subtitle">
+          <span class="typed-text"></span
+          ><span class="cursor-type">&nbsp;</span>
+        </div>
+        <p class="hero-description">Spécialisé en Laravel, React & Flutter</p>
+        <div class="hero-buttons">
+          <a href="cv/cv-Fawaz-AKARAWATOU.pdf" download class="btn btn-primary">
+            <i class="fas fa-download"></i> Télécharger CV
+          </a>
+          <a href="#contact" class="btn btn-secondary">
+            <i class="fas fa-envelope"></i> Me contacter
+          </a>
+        </div>
+      </div>
+      <div class="hero-background"></div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="about">
+      <div class="container">
+        <h2 class="section-title">À propos de moi</h2>
+        <div class="about-grid">
+          <div class="about-card scroll-reveal">
+            <div class="about-info">
+              <p><strong>Nom :</strong> AKARAWATOU</p>
+              <p><strong>Prénom :</strong> Fawaz</p>
+              <p><strong>Né le :</strong> 05/11/2004 à Tchamba</p>
+              <p><strong>Diplômé :</strong> Baccalauréat A4 (2023)</p>
+              <p>
+                <strong>Université :</strong> Première cycle – Université de
+                Kara (Faculté Anglais)
+              </p>
+              <p>
+                <strong>Formation :</strong> Développeur Web & Mobile
+                (2024–2025) – DTECH GROUP à Lomé
+              </p>
+              <p>
+                <strong>Informatique bureautique :</strong> (2021–2024) – SAMA 1
+              </p>
+              <p><strong>Comptabilité de base :</strong> 3 mois</p>
+              <p><strong>Anglais professionnel :</strong> 3 mois</p>
+            </div>
+          </div>
+          <div class="about-stats scroll-reveal">
+            <div class="stat-item">
+              <div class="stat-number" data-target="3">0</div>
+              <div class="stat-label">+ ans d'expérience</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number" data-target="15">0</div>
+              <div class="stat-label">+ projets réalisés</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number" data-target="10">0</div>
+              <div class="stat-label">+ clients satisfaits</div>
+            </div>
+          </div>
+        </div>
+        <div class="about-timeline scroll-reveal">
+          <h3>Parcours</h3>
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <h4>2021 - 2024</h4>
+                <p>Informatique bureautique – SAMA 1 (Tchamba)</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <h4>2024 - 2025</h4>
+                <p>Développeur Web & Mobile – DTECH GROUP (Lomé)</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section id="skills" class="skills">
+      <div class="container">
+        <h2 class="section-title">Compétences techniques</h2>
+        <div class="skills-filter">
+          <button class="filter-btn active" data-filter="all">Tous</button>
+          <button class="filter-btn" data-filter="frontend">Frontend</button>
+          <button class="filter-btn" data-filter="backend">Backend</button>
+          <button class="filter-btn" data-filter="framework">Frameworks</button>
+          <button class="filter-btn" data-filter="mobile">Mobile</button>
+          <button class="filter-btn" data-filter="database">
+            Base de données
+          </button>
+        </div>
+        <div class="skills-grid">
+          <!-- Frontend -->
+          <div class="skill-card scroll-reveal" data-category="frontend">
+            <div class="skill-icon"><i class="fab fa-html5"></i></div>
+            <h3>HTML</h3>
+            <div class="progress-bar">
+              <div class="progress" data-progress="90"></div>
+            </div>
+          </div>
+          <div class="skill-card scroll-reveal" data-category="frontend">
+            <div class="skill-icon"><i class="fab fa-css3-alt"></i></div>
+            <h3>CSS</h3>
+            <div class="progress-bar">
+              <div class="progress" data-progress="85"></div>
+            </div>
+          </div>
+          <div class="skill-card scroll-reveal" data-category="frontend">
+            <div class="skill-icon"><i class="fab fa-tailwind"></i></div>
+            <h3>Tailwind CSS</h3>
+            <div class="progress-bar">
+              <div class="progress" data-progress="80"></div>
+            </div>
+          </div>
+          <div class="skill-card scroll-reveal" data-category="frontend">
+            <div class="skill-icon"><i class="fab fa-bootstrap"></i></div>
+            <h3>Bootstrap</h3>
+            <div class="progress-bar">
+              <div class="progress" data-progress="85"></div>
+            </div>
+          </div>
+          <!-- Backend -->
+          <div class="skill-card scroll-reveal" data-category="backend">
+            <div class="skill-icon"><i class="fab fa-php"></i></div>
+            <h3>PHP</h3>
+            <div class="progress-bar">
+              <div class="progress" data-progress="80"></div>
+            </div>
+          </div>
+          <div class="skill-card scroll-reveal" data-category="backend">
+            <div class="skill-icon"><i class="fab fa-js"></i></div>
+            <h3>JavaScript</h3>
+            <div class="progress-bar">
+              <div class="progress" data-progress="85"></div>
+            </div>
+          </div>
+          <!-- Frameworks -->
+          <div class="skill-card scroll-reveal" data-category="framework">
+            <div class="skill-icon"><i class="fab fa-laravel"></i></div>
+            <h3>Laravel</h3>
+            <div class="progress-bar">
+              <div class="progress" data-progress="75"></div>
+            </div>
+          </div>
+          <div class="skill-card scroll-reveal" data-category="framework">
+            <div class="skill-icon"><i class="fab fa-react"></i></div>
+            <h3>React JS</h3>
+            <div class="progress-bar">
+              <div class="progress" data-progress="70"></div>
+            </div>
+          </div>
+          <!-- Mobile -->
+          <div class="skill-card scroll-reveal" data-category="mobile">
+            <div class="skill-icon"><i class="fab fa-flutter"></i></div>
+            <h3>Flutter</h3>
+            <div class="progress-bar">
+              <div class="progress" data-progress="65"></div>
+            </div>
+          </div>
+          <div class="skill-card scroll-reveal" data-category="mobile">
+            <div class="skill-icon"><i class="fas fa-fire"></i></div>
+            <h3>Firebase</h3>
+            <div class="progress-bar">
+              <div class="progress" data-progress="60"></div>
+            </div>
+          </div>
+          <!-- Database -->
+          <div class="skill-card scroll-reveal" data-category="database">
+            <div class="skill-icon"><i class="fas fa-database"></i></div>
+            <h3>MySQL</h3>
+            <div class="progress-bar">
+              <div class="progress" data-progress="80"></div>
+            </div>
+          </div>
+          <div class="skill-card scroll-reveal" data-category="database">
+            <div class="skill-icon"><i class="fas fa-leaf"></i></div>
+            <h3>MongoDB</h3>
+            <div class="progress-bar">
+              <div class="progress" data-progress="60"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES SECTION -->
+    <section id="services" class="services">
+      <div class="container">
+        <h2 class="section-title">Mes services</h2>
+        <div class="services-grid">
+          <div class="service-card scroll-reveal">
+            <div class="service-icon">
+              <i class="fas fa-globe"></i>
+            </div>
+            <h3>Développement d'applications Web</h3>
+            <p>
+              Création d'applications web modernes et responsives avec Laravel,
+              React et les dernières technologies.
+            </p>
+          </div>
+          <div class="service-card scroll-reveal">
+            <div class="service-icon">
+              <i class="fas fa-mobile-alt"></i>
+            </div>
+            <h3>Développement d'applications Mobile</h3>
+            <p>
+              Applications mobiles cross-platform avec Flutter pour iOS et
+              Android.
+            </p>
+          </div>
+          <div class="service-card scroll-reveal">
+            <div class="service-icon">
+              <i class="fas fa-laptop"></i>
+            </div>
+            <h3>Informatique bureautique</h3>
+            <p>
+              Formation et assistance en bureautique (Word, Excel, PowerPoint).
+            </p>
+          </div>
+          <div class="service-card scroll-reveal">
+            <div class="service-icon">
+              <i class="fas fa-paint-brush"></i>
+            </div>
+            <h3>Design avec Photoshop</h3>
+            <p>
+              Création de designs graphiques, retouches photo et maquettes UI.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section id="projects" class="projects">
+      <div class="container">
+        <h2 class="section-title">Mes projets</h2>
+        <div class="projects-filter">
+          <button class="filter-btn active" data-filter="all">Tous</button>
+          <button class="filter-btn" data-filter="web">Web</button>
+          <button class="filter-btn" data-filter="mobile">Mobile</button>
+          <button class="filter-btn" data-filter="design">Design</button>
+        </div>
+        <div class="projects-grid">
+          <div class="project-card scroll-reveal" data-category="web">
+            <div class="project-image">
+              <img
+                src="https://via.placeholder.com/600x400/0f172a/3b82f6?text=E-commerce"
+                alt="Projet E-commerce"
+              />
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a href="#" class="project-link"
+                    ><i class="fas fa-search"></i
+                  ></a>
+                  <a href="#" class="project-link"
+                    ><i class="fas fa-code"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div class="project-info">
+              <h3>Site E-commerce</h3>
+              <p>Application web de vente en ligne avec Laravel et React</p>
+              <span class="project-badge">Laravel</span>
+              <span class="project-badge">React</span>
+            </div>
+          </div>
+          <div class="project-card scroll-reveal" data-category="mobile">
+            <div class="project-image">
+              <img
+                src="https://via.placeholder.com/600x400/111827/7c3aed?text=Weather+App"
+                alt="Application Météo"
+              />
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a href="#" class="project-link"
+                    ><i class="fas fa-search"></i
+                  ></a>
+                  <a href="#" class="project-link"
+                    ><i class="fas fa-code"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div class="project-info">
+              <h3>Application Météo</h3>
+              <p>Application mobile météo avec Flutter et Firebase</p>
+              <span class="project-badge">Flutter</span>
+              <span class="project-badge">Firebase</span>
+            </div>
+          </div>
+          <div class="project-card scroll-reveal" data-category="design">
+            <div class="project-image">
+              <img
+                src="https://via.placeholder.com/600x400/111827/38bdf8?text=Logo+Design"
+                alt="Logo Design"
+              />
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a href="#" class="project-link"
+                    ><i class="fas fa-search"></i
+                  ></a>
+                  <a href="#" class="project-link"
+                    ><i class="fas fa-code"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div class="project-info">
+              <h3>Création de logos</h3>
+              <p>Design de logos modernes pour entreprises</p>
+              <span class="project-badge">Photoshop</span>
+            </div>
+          </div>
+          <div class="project-card scroll-reveal" data-category="web">
+            <div class="project-image">
+              <img
+                src="https://via.placeholder.com/600x400/0f172a/06b6d4?text=Portfolio"
+                alt="Portfolio"
+              />
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a href="#" class="project-link"
+                    ><i class="fas fa-search"></i
+                  ></a>
+                  <a href="#" class="project-link"
+                    ><i class="fas fa-code"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div class="project-info">
+              <h3>Portfolio personnel</h3>
+              <p>Site portfolio avec animations JavaScript</p>
+              <span class="project-badge">HTML/CSS</span>
+              <span class="project-badge">JS</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE SECTION -->
+    <section id="experience" class="experience">
+      <div class="container">
+        <h2 class="section-title">Expériences</h2>
+        <div class="experience-timeline">
+          <div class="exp-item scroll-reveal">
+            <div class="exp-year">2021 – 2024</div>
+            <div class="exp-content">
+              <h3>Informatique bureautique</h3>
+              <p class="exp-place">SAMA 1, Tchamba</p>
+              <p>
+                Formation complète en bureautique et maintenance informatique.
+              </p>
+            </div>
+          </div>
+          <div class="exp-item scroll-reveal">
+            <div class="exp-year">2024 – 2025</div>
+            <div class="exp-content">
+              <h3>Développeur Web & Mobile</h3>
+              <p class="exp-place">DTECH GROUP, Lomé</p>
+              <p>
+                Développement d'applications web et mobile pour divers clients.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- À AJOUTER DANS index.html APRÈS LA SECTION PROJECTS OU AVANT CONTACT -->
+
+    <!-- BOUTIQUE SECTION -->
+    <section id="shop" class="shop">
+      <div class="container">
+        <h2 class="section-title">Boutique de Codes</h2>
+        <p class="shop-subtitle">Achetez mes codes sources prêts à l'emploi</p>
+
+        <!-- Filtres boutique -->
+        <div class="shop-filters">
+          <button class="filter-btn active" data-shop-filter="all">Tous</button>
+          <button class="filter-btn" data-shop-filter="web">Web</button>
+          <button class="filter-btn" data-shop-filter="mobile">Mobile</button>
+          <button class="filter-btn" data-shop-filter="laravel">Laravel</button>
+          <button class="filter-btn" data-shop-filter="react">React</button>
+          <button class="filter-btn" data-shop-filter="flutter">Flutter</button>
+        </div>
+
+        <!-- Barre de recherche -->
+        <div class="shop-search">
+          <input
+            type="text"
+            id="shop-search"
+            placeholder="Rechercher un code..."
+          />
+          <i class="fas fa-search"></i>
+        </div>
+
+        <!-- Grille produits -->
+        <div class="shop-grid" id="shop-grid">
+          <!-- Produit 1 -->
+          <div
+            class="product-card"
+            data-category="web laravel"
+            data-name="E-commerce Laravel"
+          >
+            <div class="product-badge">Populaire</div>
+            <div class="product-image">
+              <img
+                src="https://via.placeholder.com/300x200/0f172a/3b82f6?text=E-commerce"
+                alt="E-commerce Laravel"
+              />
+              <div class="product-overlay">
+                <button class="quick-view-btn" data-product="1">
+                  <i class="fas fa-eye"></i> Aperçu
+                </button>
+              </div>
+            </div>
+            <div class="product-info">
+              <h3>E-commerce Laravel</h3>
+              <p>
+                Site e-commerce complet avec panier, paiement et administration
+              </p>
+              <div class="product-tech">
+                <span>Laravel</span>
+                <span>MySQL</span>
+                <span>Bootstrap</span>
+              </div>
+              <div class="product-footer">
+                <span class="product-price">35 000 FCFA</span>
+                <button class="add-to-cart" data-product="1">
+                  <i class="fas fa-shopping-cart"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Produit 2 -->
+          <div
+            class="product-card"
+            data-category="mobile flutter"
+            data-name="Application Météo Flutter"
+          >
+            <div class="product-image">
+              <img
+                src="https://via.placeholder.com/300x200/111827/7c3aed?text=Weather+App"
+                alt="Application Météo"
+              />
+              <div class="product-overlay">
+                <button class="quick-view-btn" data-product="2">
+                  <i class="fas fa-eye"></i> Aperçu
+                </button>
+              </div>
+            </div>
+            <div class="product-info">
+              <h3>Application Météo Flutter</h3>
+              <p>App météo avec API, géolocalisation et animations</p>
+              <div class="product-tech">
+                <span>Flutter</span>
+                <span>Firebase</span>
+                <span>API</span>
+              </div>
+              <div class="product-footer">
+                <span class="product-price">25 000 FCFA</span>
+                <button class="add-to-cart" data-product="2">
+                  <i class="fas fa-shopping-cart"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Produit 3 -->
+          <div
+            class="product-card"
+            data-category="web react"
+            data-name="Dashboard React"
+          >
+            <div class="product-image">
+              <img
+                src="https://via.placeholder.com/300x200/0f172a/06b6d4?text=Dashboard"
+                alt="Dashboard React"
+              />
+              <div class="product-overlay">
+                <button class="quick-view-btn" data-product="3">
+                  <i class="fas fa-eye"></i> Aperçu
+                </button>
+              </div>
+            </div>
+            <div class="product-info">
+              <h3>Dashboard React</h3>
+              <p>
+                Dashboard administrateur avec graphiques et tableaux dynamiques
+              </p>
+              <div class="product-tech">
+                <span>React</span>
+                <span>Chart.js</span>
+                <span>Redux</span>
+              </div>
+              <div class="product-footer">
+                <span class="product-price">30 000 FCFA</span>
+                <button class="add-to-cart" data-product="3">
+                  <i class="fas fa-shopping-cart"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Produit 4 -->
+          <div
+            class="product-card"
+            data-category="mobile flutter"
+            data-name="Application Chat"
+          >
+            <div class="product-badge">Nouveau</div>
+            <div class="product-image">
+              <img
+                src="https://via.placeholder.com/300x200/111827/38bdf8?text=Chat+App"
+                alt="Chat App"
+              />
+              <div class="product-overlay">
+                <button class="quick-view-btn" data-product="4">
+                  <i class="fas fa-eye"></i> Aperçu
+                </button>
+              </div>
+            </div>
+            <div class="product-info">
+              <h3>Application Chat</h3>
+              <p>App de messagerie temps réel avec Firebase</p>
+              <div class="product-tech">
+                <span>Flutter</span>
+                <span>Firebase</span>
+                <span>Bloc</span>
+              </div>
+              <div class="product-footer">
+                <span class="product-price">40 000 FCFA</span>
+                <button class="add-to-cart" data-product="4">
+                  <i class="fas fa-shopping-cart"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Produit 5 -->
+          <div
+            class="product-card"
+            data-category="web laravel"
+            data-name="Système de Blog"
+          >
+            <div class="product-image">
+              <img
+                src="https://via.placeholder.com/300x200/0f172a/3b82f6?text=Blog"
+                alt="Blog Laravel"
+              />
+              <div class="product-overlay">
+                <button class="quick-view-btn" data-product="5">
+                  <i class="fas fa-eye"></i> Aperçu
+                </button>
+              </div>
+            </div>
+            <div class="product-info">
+              <h3>Système de Blog</h3>
+              <p>Blog complet avec CMS, commentaires et SEO</p>
+              <div class="product-tech">
+                <span>Laravel</span>
+                <span>Tailwind</span>
+                <span>MySQL</span>
+              </div>
+              <div class="product-footer">
+                <span class="product-price">20 000 FCFA</span>
+                <button class="add-to-cart" data-product="5">
+                  <i class="fas fa-shopping-cart"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Produit 6 -->
+          <div
+            class="product-card"
+            data-category="web react"
+            data-name="Portfolio React"
+          >
+            <div class="product-image">
+              <img
+                src="https://via.placeholder.com/300x200/111827/7c3aed?text=Portfolio+React"
+                alt="Portfolio React"
+              />
+              <div class="product-overlay">
+                <button class="quick-view-btn" data-product="6">
+                  <i class="fas fa-eye"></i> Aperçu
+                </button>
+              </div>
+            </div>
+            <div class="product-info">
+              <h3>Portfolio React</h3>
+              <p>Template portfolio moderne avec animations</p>
+              <div class="product-tech">
+                <span>React</span>
+                <span>Framer</span>
+                <span>SCSS</span>
+              </div>
+              <div class="product-footer">
+                <span class="product-price">25 000 FCFA</span>
+                <button class="add-to-cart" data-product="6">
+                  <i class="fas fa-shopping-cart"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Produit 7 -->
+          <div
+            class="product-card"
+            data-category="mobile flutter"
+            data-name="Application Fitness"
+          >
+            <div class="product-image">
+              <img
+                src="https://via.placeholder.com/300x200/0f172a/06b6d4?text=Fitness+App"
+                alt="Fitness App"
+              />
+              <div class="product-overlay">
+                <button class="quick-view-btn" data-product="7">
+                  <i class="fas fa-eye"></i> Aperçu
+                </button>
+              </div>
+            </div>
+            <div class="product-info">
+              <h3>Application Fitness</h3>
+              <p>App de suivi d'entraînement avec exercices et progression</p>
+              <div class="product-tech">
+                <span>Flutter</span>
+                <span>SQLite</span>
+                <span>Provider</span>
+              </div>
+              <div class="product-footer">
+                <span class="product-price">35 000 FCFA</span>
+                <button class="add-to-cart" data-product="7">
+                  <i class="fas fa-shopping-cart"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Produit 8 -->
+          <div
+            class="product-card"
+            data-category="web laravel"
+            data-name="Système de Réservation"
+          >
+            <div class="product-badge">-20%</div>
+            <div class="product-image">
+              <img
+                src="https://via.placeholder.com/300x200/111827/38bdf8?text=Booking+System"
+                alt="Booking System"
+              />
+              <div class="product-overlay">
+                <button class="quick-view-btn" data-product="8">
+                  <i class="fas fa-eye"></i> Aperçu
+                </button>
+              </div>
+            </div>
+            <div class="product-info">
+              <h3>Système de Réservation</h3>
+              <p>Plateforme de réservation pour hôtels ou restaurants</p>
+              <div class="product-tech">
+                <span>Laravel</span>
+                <span>Livewire</span>
+                <span>Alpine</span>
+              </div>
+              <div class="product-footer">
+                <span class="product-price old-price">50 000 FCFA</span>
+                <span class="product-price">40 000 FCFA</span>
+                <button class="add-to-cart" data-product="8">
+                  <i class="fas fa-shopping-cart"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Panier flottant -->
+        <div class="cart-float" id="cart-float">
+          <button class="cart-toggle" id="cart-toggle">
+            <i class="fas fa-shopping-cart"></i>
+            <span class="cart-count" id="cart-count">0</span>
+          </button>
+
+          <div class="cart-panel" id="cart-panel">
+            <div class="cart-header">
+              <h3>Mon Panier</h3>
+              <button class="cart-close" id="cart-close">&times;</button>
+            </div>
+            <div class="cart-items" id="cart-items">
+              <!-- Les articles apparaîtront ici -->
+            </div>
+            <div class="cart-footer">
+              <div class="cart-total">
+                <span>Total:</span>
+                <span id="cart-total">0 FCFA</span>
+              </div>
+              <button class="btn btn-primary checkout-btn" id="checkout-btn">
+                <i class="fas fa-credit-card"></i> Commander
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal aperçu rapide -->
+      <div class="product-modal" id="product-modal">
+        <div class="modal-content">
+          <span class="modal-close">&times;</span>
+          <div class="modal-body" id="modal-body">
+            <!-- Contenu dynamique -->
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal checkout -->
+      <div class="checkout-modal" id="checkout-modal">
+        <div class="checkout-content">
+          <span class="checkout-close">&times;</span>
+          <h2>Finaliser la commande</h2>
+          <form id="checkout-form" class="checkout-form">
+            <div class="form-row">
+              <div class="form-group">
+                <label>Nom complet</label>
+                <input type="text" id="checkout-name" required />
+              </div>
+              <div class="form-group">
+                <label>Email</label>
+                <input type="email" id="checkout-email" required />
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label>Téléphone</label>
+                <input type="tel" id="checkout-phone" required />
+              </div>
+              <div class="form-group">
+                <label>Moyen de paiement</label>
+                <select id="checkout-payment">
+                  <option value="orange">Orange Money</option>
+                  <option value="moov">Moov Money</option>
+                  <option value="tmoney">T-Money</option>
+                  <option value="paypal">PayPal</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Code promo</label>
+              <input
+                type="text"
+                id="checkout-promo"
+                placeholder="Entrez votre code"
+              />
+            </div>
+            <div class="order-summary" id="order-summary">
+              <!-- Résumé de commande -->
+            </div>
+            <button type="submit" class="btn btn-primary" id="confirm-order">
+              Confirmer la commande
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS SECTION -->
+    <section id="testimonials" class="testimonials">
+      <div class="container">
+        <h2 class="section-title">Témoignages</h2>
+        <div class="testimonials-slider">
+          <div class="testimonial-card scroll-reveal">
+            <div class="testimonial-content">
+              <i class="fas fa-quote-left"></i>
+              <p>
+                Fawaz est un développeur talentueux et professionnel. Il a
+                réalisé notre site e-commerce avec brio.
+              </p>
+              <div class="testimonial-author">
+                <h4>Jean Dupont</h4>
+                <p>CEO, TechStore</p>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card scroll-reveal">
+            <div class="testimonial-content">
+              <i class="fas fa-quote-left"></i>
+              <p>
+                Excellent travail sur notre application mobile. Livraison dans
+                les délais et qualité au rendez-vous.
+              </p>
+              <div class="testimonial-author">
+                <h4>Marie Laurent</h4>
+                <p>Directrice, StartApp</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <h2 class="section-title">Contactez-moi</h2>
+        <div class="contact-grid">
+          <div class="contact-info scroll-reveal">
+            <h3>Restons en contact</h3>
+            <p><i class="fas fa-map-marker-alt"></i> Lomé, Togo</p>
+            <p><i class="fas fa-phone"></i> +228 00 00 00 00</p>
+            <p><i class="fas fa-envelope"></i> fawaz.akarawatou@email.com</p>
+            <div class="social-links">
+              <a href="#"><i class="fab fa-github"></i></a>
+              <a href="#"><i class="fab fa-linkedin"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-whatsapp"></i></a>
+            </div>
+          </div>
+          <form class="contact-form scroll-reveal" id="contact-form">
+            <div class="form-group">
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Votre nom"
+                required
+              />
+              <small class="error-message"></small>
+            </div>
+            <div class="form-group">
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Votre email"
+                required
+              />
+              <small class="error-message"></small>
+            </div>
+            <div class="form-group">
+              <input
+                type="text"
+                id="subject"
+                name="subject"
+                placeholder="Sujet"
+                required
+              />
+              <small class="error-message"></small>
+            </div>
+            <div class="form-group">
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                placeholder="Votre message"
+                required
+              ></textarea>
+              <small class="error-message"></small>
+            </div>
+            <button type="submit" class="btn btn-primary">
+              Envoyer le message
+            </button>
+            <div class="form-success hidden">
+              <i class="fas fa-check-circle"></i>
+              <p>Message envoyé avec succès!</p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-social">
+            <a href="#"><i class="fab fa-github"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-whatsapp"></i></a>
+          </div>
+          <p class="copyright">
+            &copy; 2025 AKARAWATOU Fawaz. Tous droits réservés.
+          </p>
+        </div>
+      </div>
+      <button class="back-to-top" id="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+      </button>
+    </footer>
+
+    <!-- WhatsApp floating button -->
+    <a href="https://wa.me/22800000000" class="whatsapp-float" target="_blank">
+      <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/filter.js"></script>
+  </body>
+</html>

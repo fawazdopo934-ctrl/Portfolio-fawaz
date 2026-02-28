@@ -1,0 +1,100 @@
+/* css/responsive.css */
+@media (max-width: 1024px) {
+  .hero-title {
+    font-size: 36px;
+  }
+
+  .hero-subtitle {
+    font-size: 24px;
+  }
+
+  .about-grid,
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav-menu {
+    position: fixed;
+    top: 70px;
+    left: -100%;
+    width: 100%;
+    height: calc(100vh - 70px);
+    background: var(--light);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: left 0.3s;
+  }
+
+  .nav-menu.active {
+    left: 0;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .hero-title {
+    font-size: 28px;
+  }
+
+  .hero-subtitle {
+    font-size: 20px;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .exp-item {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .exp-year {
+    align-self: flex-start;
+  }
+
+  .about-stats {
+    grid-template-columns: 1fr;
+  }
+
+  .skills-filter {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .filter-btn {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .section-title {
+    font-size: 28px;
+  }
+
+  .hero-image {
+    width: 150px;
+    height: 150px;
+  }
+
+  .cursor {
+    display: none;
+  }
+
+  .back-to-top,
+  .whatsapp-float {
+    width: 40px;
+    height: 40px;
+    font-size: 16px;
+  }
+}
